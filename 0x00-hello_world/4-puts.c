@@ -3,7 +3,7 @@
 /*
  * main - prints "\"Programming is
  * like building a multilingual puzzle"
- * adn returns 0.
+ * return 0.
  */
 
 int main(void)
