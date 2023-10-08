@@ -4,8 +4,8 @@
 /**
  * main - Prints the alphabet in lowercase,
  * then in uppercase.
- * 
- * Return: 0 
+ *
+ * Return: 0
  */
 
 int main(void)

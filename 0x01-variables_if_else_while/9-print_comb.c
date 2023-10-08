@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - Prints all possible combinations 
+ * main - Prints all possible combinations
  * of single-digit numbers.
- * 
+ *
  * Return: 0 
  */
 
@@ -16,6 +16,11 @@ int main(void)
 	{
 		for (num = 0; num < 10; num++)
 		{
+			if (num == 9)
+			{
+				putchar('0' + num);
+				continue;
+			}
 			putchar('0' + num);
 			putchar(',');
 			putchar(' ');
