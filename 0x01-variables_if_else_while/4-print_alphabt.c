@@ -4,8 +4,8 @@
 /**
  * main - Prints all the alphabet letter except
  * q and e, all in lowercase.
- * 
- * Return: 0 
+ *
+ * Return: 0
  */
 
 int main(void)
@@ -14,10 +14,11 @@ int main(void)
 
 	for (character = 'a'; character <= 'z'; character++)
 	{
-		while(character != 'q' || 'e')
+		if ((character == 'q') || (character == 'e'))
 		{
-			putchar(character);
+			continue;
 		}
+		putchar(character);
 	}
 	putchar('\n');
 

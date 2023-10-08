@@ -4,8 +4,8 @@
 /**
  * main - Prints all the numbers of base 16
  * in lowercase.
- * 
- * Return: 0 
+ *
+ * Return: 0
  */
 
 int main(void)
@@ -15,7 +15,7 @@ int main(void)
 
 	for (num = 0; num < 10; num++)
 	{
-		putchar('num');
+		putchar(num);
 	}
 	for (character = 'a'; character <= 'f'; character++)
 	{
