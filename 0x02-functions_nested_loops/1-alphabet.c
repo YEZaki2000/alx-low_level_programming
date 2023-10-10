@@ -1,10 +1,11 @@
 #include <stdio.h>
 
-void print_alphabet(void) {
-char ch;
-for (ch = 'a'; ch <= 'z'; ch++)
+void print_alphabet(void)
 {
-	putchar(ch);
-}
-printf("\n");
+	char ch;
+	for (ch = 'a'; ch <= 'z'; ch++)
+	{
+		putchar(ch);
+	}
+	printf("\n");
 }
