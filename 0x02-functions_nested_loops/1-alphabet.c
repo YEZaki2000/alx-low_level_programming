@@ -1,22 +1,8 @@
-#include <stdio.h>
-
-/**
-* main - craetes a function that prints the alphabet,
-* in lowercase, followed by a new line.
-*
-* Return: 0.
-*/
-
-int main(void)
+void print_alphabet(void) {
+char ch;
+for (ch = 'a'; ch <= 'z'; ch++)
 {
-	char ch;
-	void print_alphabet(void) {
-	for (ch = 'a'; ch <= 'z'; ch++)
-	{
-		putchar(ch);
-	}
-	printf("\n");
-	};
-
-	return (0);
+	putchar(ch);
 }
+printf("\n");
+};
