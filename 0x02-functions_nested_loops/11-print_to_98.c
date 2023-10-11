@@ -2,8 +2,9 @@
 
 
 /**
-* print_to_98() - prints all natural numbers
+* print_to_98 - prints all natural numbers
 * from n to 98, followed by a new line.
+* @n: starting number.
 *
 * Return: Null
 */

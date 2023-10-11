@@ -1,6 +1,8 @@
 /**
-* add() - adds two integers
+* add - adds two integers
 * and returns the result.
+* @i: first number.
+* @y: second number.
 *
 * Return: Addition result.
 */
