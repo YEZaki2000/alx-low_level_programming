@@ -10,12 +10,7 @@
 
 int _islower(int c)
 {
-	int res = islower(c);
-	int r = putchar(res);
-	printf("%d\n", islower('o'));
-	printf("%d\n", r);
-
-	if (r == 1)
+	if (islower(c) != 0)
 	{
 		return 1;
 	} else
