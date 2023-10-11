@@ -1,4 +1,5 @@
 #include <ctype.h>
+#include <stdio.h>
 
 /**
 * _islower() -  a function that checks for
