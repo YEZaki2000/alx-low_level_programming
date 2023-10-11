@@ -16,7 +16,10 @@ void times_table(void)
 	{
 		for (y = 0; y < 10; y++)
 		{
-			printf("%d * %d", y, i);
+			int mult;
+			
+			mult = i * y;
+			printf("%d", mult);
 		}
 	}
 }
