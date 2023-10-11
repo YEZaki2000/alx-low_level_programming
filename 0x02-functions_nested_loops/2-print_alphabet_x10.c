@@ -2,7 +2,7 @@
 
 /**
 * print_alphabet_x10() - jfksdjfksldjf
-* Return
+* Return: Null.
 */
 
 void print_alphabet_x10(void)
