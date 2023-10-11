@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* print_alphabet() - prints 10 times the alphabet,
+* print_alphabet - prints 10 times the alphabet,
 * in lowercase, followed by a new line.
 *
 * Return: Null.
