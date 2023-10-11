@@ -21,10 +21,22 @@ void times_table(void)
 			mult = i * y;
 			if (y != 9)
 			{
-				printf("%02d, ", mult);
+				if (mult < 10)
+				{
+					if ((mult + 1) >= 10)
+					{
+						printf("%d, ", mult);
+					} else
+					{
+						printf("%d,  ", mult);
+					}
+				} else
+				{
+					printf("%d, ", mult);
+				}
 			} else
 			{
-				printf("%02d\n", mult);
+				printf("%d\n", mult);
 			}
 		}
 	}
