@@ -19,7 +19,7 @@ void times_table(void)
 			int mult;
 			
 			mult = i * y;
-			if (y != 9):
+			if (y != 9)
 			{
 				printf("%d, ", mult);
 			} else
