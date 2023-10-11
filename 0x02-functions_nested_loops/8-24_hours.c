@@ -9,10 +9,13 @@
 
 void jack_bauer(void)
 {
-	for (int x = 0; x < 24; x++)
+	int x;
+	int i;
+
+	for (x = 0; x < 24; x++)
 	{
 		
-		for (int i = 0; i <+ 60; i++)
+		for (i = 0; i <+ 60; i++)
 		{
 			printf("%02d:%02d", x, i);
 			putchar('\n');
