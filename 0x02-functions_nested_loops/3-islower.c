@@ -13,7 +13,7 @@ int _islower(int c)
 	int res = islower(c);
 	int r = putchar(res);
 
-	if (res == 1)
+	if (r == 1)
 	{
 		return 1;
 	} else
