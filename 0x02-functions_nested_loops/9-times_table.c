@@ -17,14 +17,14 @@ void times_table(void)
 		for (y = 0; y < 10; y++)
 		{
 			int mult;
-			
+
 			mult = i * y;
 			if (y != 9)
 			{
-				printf("%d, ", mult);
+				printf("%02d, ", mult);
 			} else
 			{
-				printf("%d\n", mult);
+				printf("%02d\n", mult);
 			}
 		}
 	}
