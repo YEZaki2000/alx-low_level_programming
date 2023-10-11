@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
-* flksjdflk - jfksdjfksldjf
-* Return: Null.
+* print_alphabet_x10() - jfksdjfksldjf
+* Return
 */
 
 void print_alphabet_x10(void)
