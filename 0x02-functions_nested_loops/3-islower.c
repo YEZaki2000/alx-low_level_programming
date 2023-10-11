@@ -10,7 +10,10 @@
 
 int _islower(int c)
 {
-	if (putchar(islower(c)) == 1)
+	int res = islower(c);
+	int r = putchar(res);
+
+	if (res == 1)
 	{
 		return 1;
 	} else
