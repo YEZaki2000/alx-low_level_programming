@@ -23,7 +23,10 @@ void times_table(void)
 			{
 				if (mult < 10)
 				{
-					if ((mult + 1) >= 10)
+					int multnext;
+
+					multnext = i * (y + 1);
+					if ((multnext) >= 10)
 					{
 						printf("%d, ", mult);
 					} else
