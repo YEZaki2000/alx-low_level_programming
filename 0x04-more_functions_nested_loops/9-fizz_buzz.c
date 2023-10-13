@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
 * main - a program that prints the numbers
@@ -14,40 +15,23 @@
 int main(void)
 {
 	int i, x, y, z;
-	char fizz[50] = "Fizz ";
-	char buzz[50] = "Buzz ";
-	char fizzbuzz[50] = "FizzBuzz ";
 
 	for (i = 1; i <= 100; i++)
 	{
 		if (((i % 3) == 0) && ((i % 5) != 0))
 		{
-			for (x = 0; x <= 25; x++)
-			{
-				_putchar(fizz[x]);
-			}
+			printf("Fizz ");
 		} else if (((i % 5) == 0) && ((i % 3) != 0))
 		{
-			for (y = 0; y <= 25; y++)
-			{
-				_putchar(buzz[y]);
-			}
+
+			printf("Buzz ");
+			
 		} else if (((i % 3) == 0) && ((i % 5) == 0))
 		{
-			for (z = 0; z <= 25; z++)
-			{
-				_putchar(fizzbuzz[z]);
-			}
+			printf("FizzBuzz ");
 		} else
 		{
-			if (i / 10)
-			{
-				_putchar((i / 10) + '0');
-			}
-			_putchar(i%10 + '0');
-			_putchar(' ');
+			printf("%d ", i);
 		}
 	}
-
-	return (0);
 }
