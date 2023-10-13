@@ -13,7 +13,7 @@ void print_numbers(void)
 
 	for (num = 0; num < 10; num++)
 	{
-		printf("%d", num);
+		_putchar(num + '0');
 	}
 	_putchar('\n');
 }
