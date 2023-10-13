@@ -20,13 +20,13 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
-		if ((i % 3) == 0)
+		if (((i % 3) == 0) && ((i % 5) != 0))
 		{
 			for (x = 0; x <= 25; x++)
 			{
 				_putchar(fizz[x]);
 			}
-		} else if (i % 5 == 0)
+		} else if (((i % 5) == 0) && ((i % 3) != 0))
 		{
 			for (y = 0; y <= 25; y++)
 			{
