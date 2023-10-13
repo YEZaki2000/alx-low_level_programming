@@ -14,7 +14,7 @@
 
 int main(void)
 {
-	int i, x, y, z;
+	int i;
 
 	for (i = 1; i <= 100; i++)
 	{
