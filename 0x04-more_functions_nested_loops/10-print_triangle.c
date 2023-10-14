@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
-* print_triangle - kljfksdajf
+* print_triangle - a function that prints
+* a triangle, followed by a new line.
 * @size: input number.
 *
-* Return: Nll
+* Return: Null.
 */
 
 void print_triangle(int size)
@@ -12,7 +13,7 @@ void print_triangle(int size)
 	int i, space, ch;
 
 	if (size > 0)
-	{	
+	{
 		for (i = 0; i < size; i++)
 		{
 			for ((space = (size - i - 1)); space > 0; space--)
@@ -25,9 +26,8 @@ void print_triangle(int size)
 			}
 			_putchar('\n');
 		}
-		
 	} else
-	{	
+	{
 		_putchar('\n');
 	}
 }
