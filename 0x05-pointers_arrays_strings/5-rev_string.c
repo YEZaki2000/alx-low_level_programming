@@ -9,16 +9,13 @@
 void rev_string(char *s)
 {
 	int i, lngh;
+	char *srev;
 
-	lngh = strlen(s);
-	char *srev[lngh];
-
-	for (i = lngh - 1; i >= 0; i --)
-	{
-		srev[-i] = s[i];
-	}
+	srev = strrev(s);
+	lngh = strlen(srev);
 	for (i = 0; i < lngh; i++)
 	{
-		s[i] = srev[i];
+		_putchar(srev[i];
 	}
+	_putchar('\n');
 }
