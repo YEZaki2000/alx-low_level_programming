@@ -10,11 +10,10 @@
 
 int _strlen(char *s)
 {
-	char str[50];
+	char *str = s;
 	int slength;
 
-	*s = &str;
-	slength = strlen(str);
+	slength = strlen(*str);
 
 	return (slength);
 }
