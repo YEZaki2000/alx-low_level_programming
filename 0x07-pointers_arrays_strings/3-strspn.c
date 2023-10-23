@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * int _strspn - klsjdkfj
+  * _strspn - klsjdkfj
   * @s: klsjdf
   * @accept: lksjdf
   * Return: klsjdf
