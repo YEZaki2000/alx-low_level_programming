@@ -8,8 +8,12 @@
 
 int is_palindrome(char *s)
 {
-	char revs = s;
-	char temp;
+	/**
+	char revs[100];
+	char news[100];
+	strcpy(news, s);
+	strcpy(revs, s);
+	char temp[100];
 	
 	strcpy(temp, revs);
 	int length = strlen(revs);
@@ -23,7 +27,27 @@ int is_palindrome(char *s)
 		start++;
 		end--;
 	}
+	puts(news);
+	puts(revs);
 
+	*/
+	char *revs[100];
+	int i, j, count = 0;
+
+	while (s[count] != '\0') 
+	{
+		count++;
+	}
+
+	j = count - 1;
+
+	for (i = 0; i < count; i++) 
+	{
+	  revs[i] = s[j];
+	  j--;
+	}
+	puts(s);
+	puts(revs);
 	if (revs == s)
 	{
 		return (1);

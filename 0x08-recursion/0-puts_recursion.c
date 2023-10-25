@@ -8,8 +8,5 @@
 
 void _puts_recursion(char *s)
 {
-	char newline = "\n";
-
 	puts(s);
-	puts(newline);
 }

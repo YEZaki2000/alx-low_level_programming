@@ -8,10 +8,17 @@
 
 void _print_rev_recursion(char *s)
 {
-	char *revs;
-	char newline = "\n";
+	int lngh;
 
-	revs = strrev(s);
-	puts(revs);
-	puts(newline);
+	lngh = strlen(s);
+	while (lngh >= 0)
+	{
+		printf("%c\n", s[lngh - 1]);
+	lngh --;
+	_print_rev_recursion(s);
+
+	}
+	printf("%c\n", s[lngh - 1]);
+	lngh --;
+	_print_rev_recursion(s);
 }
