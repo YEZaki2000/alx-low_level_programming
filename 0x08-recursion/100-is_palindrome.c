@@ -8,9 +8,22 @@
 
 int is_palindrome(char *s)
 {
-	char *revs;
+	char revs = s;
+	char temp;
+	
+	strcpy(temp, revs);
+	int length = strlen(revs);
+	int start = 0, end = length - 1;
+	
+	while (start < end) 
+	{
+		char temp = revs[start];
+		revs[start] = revs[end];
+		revs[end] = temp;
+		start++;
+		end--;
+	}
 
-	revs = strrev(s);
 	if (revs == s)
 	{
 		return (1);
