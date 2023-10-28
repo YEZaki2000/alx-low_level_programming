@@ -5,6 +5,7 @@ int main(int argc, char *argv[])
 {
 	int i, res, counter, cents;
 	int coins[] = {25, 10, 5, 2, 1};
+	(void)argc;
 	cents = atoi(argv[1]);
 
 	res = 0;
