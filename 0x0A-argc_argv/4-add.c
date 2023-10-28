@@ -13,19 +13,16 @@ int main(int argc, char *argv[])
 {
 	int i, res;
 
-	for (i = 0; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
-		if (isdigit(argv[i]) == 0)
-		{
-			printf("Error\n");
-			return (1);
-		}
-		if (argv[i] < 0)
+		if (atoi(argv[i]) < 0)
 		{
 			continue;
 		}
-		res += argv[i];
+		res += atoi(argv[i]);
+		
 	}
+	printf("%d\n", res);
 
 	return (0);
 }
