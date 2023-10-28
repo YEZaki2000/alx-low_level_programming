@@ -1,6 +1,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/**
+ * main - lskadjfl
+ * @argc: lksjdf
+ * @argv: lksjdfk
+ * Return:  kldsjf
+ */
+
 int main(int argc, char *argv[])
 {
 	int i, res, counter, cents;
