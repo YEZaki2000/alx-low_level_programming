@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 char *argstostr(int ac, char **av);
 char *create_array(unsigned int size, char c);
