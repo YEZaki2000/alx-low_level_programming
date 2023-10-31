@@ -6,6 +6,7 @@ char *create_array(unsigned int size, char c)
 
 	str = malloc(sizeof(char) * size);
 	str[0] = c;
+	free(str);
 
 	return (str);
 }
