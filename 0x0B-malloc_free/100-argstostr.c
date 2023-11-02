@@ -11,7 +11,7 @@ char *argstostr(int ac, char **av)
 {
 	char *s;
 	/*char *temp;*/
-	int i, j, lengthbefore;
+	int i, j, length, lengthbefore;
 	/* int x; */
 
 	/*
@@ -29,19 +29,21 @@ char *argstostr(int ac, char **av)
 	lengthbefore = 0;
 	for (i = 1; i < ac; i++)
 	{
-		printf("current arg%s\n", av[i]);
+		/*printf("current arg%s\n", av[i]);*/
 		/*char lengthbefore = strcat("lngh", itoa(i - 1));*/
 		lengthbefore += strlen(av[i - 1]);
-		printf("%d\n", lengthbefore);
-		int length = strlen(av[i]);
+		/*printf("%d\n", lengthbefor);*/
+		length -= length;
+		length += strlen(av[i]);
 		for (j = 0; j < length; j++)
 		{
-			printf("%c\n", av[i][j]);
+			/*printf("%c\n", av[i][j]);
 			printf("s: %c\n", s[j]);
+			*/
 			s[lengthbefore + j] = av[i][j];
-			printf("slengthbefore + j: %c\n", s[lengthbefore + j]);
+			/*printf("slengthbefore + j: %c\n", s[lengthbefore + j]);*/
 		}
-		printf("s now: %s\n", s);
+		/*printf("s now: %s\n", s);*/
 		/*lengthbefore += length;*/
 	}
 
