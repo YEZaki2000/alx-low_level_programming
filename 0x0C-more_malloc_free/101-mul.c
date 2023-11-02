@@ -12,5 +12,5 @@ void main(int argc, char *argv[])
 	int res;
 
 	res = (atoi(argv[1]) * atoi(argv[2]));
-	putchar(res);
+	_putchar(res);
 }
