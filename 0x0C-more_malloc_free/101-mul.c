@@ -13,7 +13,6 @@ int main(int argc, char *argv[])
 	(void) argc;
 
 	res = (atoi(argv[1]) * atoi(argv[2]));
-	printf("%d\n", res);
 	_putchar(res + 48);
 
 	return (0);
