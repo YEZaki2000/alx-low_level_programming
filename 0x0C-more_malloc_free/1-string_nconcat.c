@@ -17,7 +17,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	strcpy(s, s1);
 
 	lngh = strlen(s);
-	for (i = 0; i < n; i++)
+	for (i = 0; i < (int) n; i++)
 	{
 		s[lngh + i] = s2[i];
 	}
