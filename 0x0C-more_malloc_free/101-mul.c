@@ -7,10 +7,14 @@
  * Return: jklsdjf
  */
 
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int res;
+	(void) argc;
 
 	res = (atoi(argv[1]) * atoi(argv[2]));
-	_putchar(res);
+	printf("%d\n", res);
+	_putchar(res + 48);
+
+	return (0);
 }
