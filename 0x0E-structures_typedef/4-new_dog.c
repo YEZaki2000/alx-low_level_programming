@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdlib.h>
 
 /**
  * new_dog - lksjdf
@@ -10,11 +11,11 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t myveryowndog;
+	dog_t *myveryowndog = malloc(sizeof(*myveryowndog));
 
-	dog_t.name = name;
-	dog_t.age = age;
-	dog_t.owner = owner;
+	myveryowndog->name = name;
+	myveryowndog->age = age;
+	myveryowndog->owner = owner;
 
 	return (myveryowndog);
 }
