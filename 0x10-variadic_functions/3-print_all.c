@@ -11,18 +11,18 @@
 typedef struct something
 {
 	char *formatt;
-	char *type;
 } mystruct;
 
 void print_all(const char * const format, ...)
 {
 	va_list ptr;
 	int lngh;
+	char *separator = ", ";
 	mystruct mytypes[4] = {
-		{c, char},
-		{i, int},
-		{f, float},
-		{s, char *}
+		{c},
+		{i},
+		{f},
+		{s}
 	};
 
 	lngh = strlen(format);
@@ -37,11 +37,27 @@ void print_all(const char * const format, ...)
 		{
 			if (strcmp(format, mytypes[y].formatt) == 0)
 			{
-				printf(va_arg(ptr, mytypes[y].type));
+				switch(format)
+				{
+					case 'c':
+						printf("%s%c", separator, va_arg(ptr, int));
+						break;
+					case 'i':
+						printf("%s%d", separator, va_arg(ptr, int));
+						break;
+					case 'f':
+						printf("%s%f", separator, va_arg(ptr, double));
+						break;
+					case 's':
+						printf("%s%s", separator, va_arg(ptr, char *));
+						break;
+				}
 			}
 			y++;
 		}
 		i++;
 	}
 	va_end(ptr);
+
+	printf("\n");
 }
