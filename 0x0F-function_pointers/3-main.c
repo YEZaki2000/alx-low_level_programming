@@ -12,7 +12,14 @@
 int main(int argc, char *argv[])
 {
     int res;
+    int i;
 
+    for (i = 0; i < argc; i++)
+    {
+        printf("argv: %s\n", argv[i]);
+    }
+
+    printf("argc: %d\n", argc);
     if (argc != 4)
     {
         printf("Error\n");
